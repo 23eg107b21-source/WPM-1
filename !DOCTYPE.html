@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .flex {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .content {
+      flex: 1;
+    }
+    .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+    }
+    h1, h2, h3 {
+      color: grey;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid rgb(56, 50, 50);
+      padding: 10px;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    button {
+      padding: 8px 16px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .rating {
+      margin-top: 30px;
+    }
+    #emoji-output {
+      font-size: 1.2em;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: red;
+    }
+    #thankyou-page {
+      display: none;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    #emoji {
+      font-size: 6rem;
+      margin-bottom: 20px;
+    }
+    .thank-you-message {
+      font-size: 1.8rem;
+      color: red;
+    }
+    #thankyou-page button {
+      margin-top: 20px;
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="resume-page">
+    <div class="flex">
+      <div class="content">
+        <h1>E. RISHIK</h1>
+        <p>KVR Ashreya Awas, Flat No: 610, Goutham Nagar Colony, Saroornagar, Hyderabad-500035</p>
+        <p>Email: <a href="mailto:rishikellendula@gmail.com">rishikellendula@gmail.com</a> <br> Contact: 7337230029</p>
+
+        <h2>Career Objective</h2>
+        <p>To secure a challenging role in a dynamic organization where I can leverage my technical skills, analytical thinking, and problem-solving abilities to contribute effectively to business growth and innovation.</p>
+
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Languages: C, C++, Python, Java, R</li>
+          <li>Data Structures, SQL</li>
+          <li>HTML, CSS, JAVASCRIPT</li>
+          <li>MS Office Suite</li>
+          <li>Operating System: Windows</li>
+        </ul>
+
+        <h2>Certifications & Achievements</h2>
+        <ul>
+          <li>Excellence in Chess and Running</li>
+          <li>Hands-on AI & ML Projects</li>
+        </ul>
+
+        <h2>Hobbies & Interests</h2>
+        <ul>
+          <li>Exploring AI tools</li>
+          <li>Problem-solving & Algorithms</li>
+          <li>Chess, Badminton, Outdoor Sports</li>
+        </ul>
+
+        <h2>Education</h2>
+        <table>
+          <tr>
+            <th>Sl. No</th>
+            <th>Examination</th>
+            <th>Institution</th>
+            <th>Board/University</th>
+            <th>Year</th>
+            <th>Marks</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>B.Tech (CSE-AIML)</td>
+            <td>Anurag University</td>
+            <td>OU</td>
+            <td>2027</td>
+            <td>---</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Intermediate</td>
+            <td>Narayana Junior College</td>
+            <td>BIE</td>
+            <td>2022</td>
+            <td>91%</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>SSC</td>
+            <td>Genius Grammar School</td>
+            <td>BSE</td>
+            <td>2020</td>
+            <td>100%</td>
+          </tr>
+        </table>
+
+        <h2>Strengths</h2>
+        <ul>
+          <li>Analytical & problem-solving skills</li>
+          <li>Teamwork & interpersonal communication</li>
+          <li>Self-motivated and eager to learn</li>
+          <li>Leadership qualities</li>
+        </ul>
+
+        <h2>Personal Details</h2>
+        <ul>
+          <li>Father's Name: Sri. E. Surendar</li>
+          <li>DOB: 10th April 2004</li>
+          <li>Nationality: Indian</li>
+          <li>Religion: Hindu</li>
+          <li>Marital Status: Single</li>
+          <li>Languages Known: English, Hindi, Telugu</li>
+        </ul>
+
+        <h3>Connect:</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/ellendula-rishik-926375352/" target="_blank">LinkedIn</a> |
+          <a href="MyGitHub" target="_blank">GitHub</a>
+        </p>
+
+        <div class="rating">
+          <h3>Rate This Resume:</h3>
+          <form id="ratingForm">
+            <label><input type="radio" name="rating" value="1" /> 1</label>
+            <label><input type="radio" name="rating" value="2" /> 2</label>
+            <label><input type="radio" name="rating" value="3" /> 3</label>
+            <label><input type="radio" name="rating" value="4" /> 4</label>
+            <label><input type="radio" name="rating" value="5" /> 5</label><br><br>
+            <button type="submit">Submit Rating</button>
+          </form>
+          <div id="emoji-output"></div>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29saXR1ZGV8ZW58MHx8MHx8fDA%3D" alt="Demo Photo" class="photo"/>
+    </div>
+  </div>
+
+  <div class="container" id="thankyou-page">
+    <div id="emoji">❓</div>
+    <div class="thank-you-message">Thank you for rating the resume!</div>
+    <button onclick="goBack()">Back to Resume</button>
+  </div>
+
+  <script>
+    document.getElementById('ratingForm').onsubmit = function(event) {
+      event.preventDefault();
+      const ratings = document.getElementsByName('rating');
+      let selectedRating = null;
+      for (const radio of ratings) {
+        if (radio.checked) {
+          selectedRating = parseInt(radio.value);
+          break;
+        }
+      }
+
+      if (selectedRating >= 1 && selectedRating <= 5) {
+        let emoji = "❓";
+        if (selectedRating === 1) emoji = "😞";
+        else if (selectedRating === 2) emoji = "😐";
+        else if (selectedRating === 3) emoji = "🙂";
+        else if (selectedRating === 4) emoji = "😃";
+        else if (selectedRating === 5) emoji = "👏";
+
+        document.getElementById("resume-page").style.display = "none";
+        document.getElementById("thankyou-page").style.display = "block";
+        document.getElementById("emoji").textContent = emoji;
+      } else {
+        document.getElementById('emoji-output').textContent = "Please select a rating from 1 to 5.";
+      }
+    };
+
+    function goBack() {
+      document.getElementById("thankyou-page").style.display = "none";
+      document.getElementById("resume-page").style.display = "block";
+      const ratings = document.getElementsByName('rating');
+      ratings.forEach(r => r.checked = false);
+      document.getElementById("emoji-output").textContent = "";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <h2>🔐 Login with College Email</h2>
+  <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+    <input type="email" name="email" [(ngModel)]="userEmail" placeholder="Enter email" required>
+    <button type="submit">Login</button>
+    <p *ngIf="errorMsg" class="error">{{ errorMsg }}</p>
+  </form>
+</div>

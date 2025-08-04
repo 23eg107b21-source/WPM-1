@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent {
+  userEmail: string = '';
+  errorMsg: string = '';
+
+  constructor(private router: Router) {}
+
+  onLogin() {
+    const allowedEmail = '23eg107b21@anurag.edu.in';
+    if (this.userEmail.trim().toLowerCase() === allowedEmail.toLowerCase()) {
+      // Save session email or token if needed
+      this.router.navigate(['/home']);
+    } else {
+      this.errorMsg = 'Access denied. Please enter a valid college email.';
+    }
+  }
+}
